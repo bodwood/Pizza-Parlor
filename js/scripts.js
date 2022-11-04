@@ -59,4 +59,13 @@ console.log(totalPrice);
 
 
 //UI Logic --------------------------------------
+function showTotalPrice(event){
+  event.preventDefault();
+  const pizzaSize = document.querySelector('input[name="size"]:checked').value;
+  console.log(pizzaSize);
+}
 
+window.addEventListener("load", function(){
+  const submitButton = document.getElementById("submitBtn");
+  submitButton.addEventListener("click", showTotalPrice);
+});
