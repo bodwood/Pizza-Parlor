@@ -81,7 +81,7 @@
         </label>
       </div>
     </div>
-  
+
 
     <div class="row columns2 center-block">
       <div class="col-4">
@@ -105,25 +105,17 @@
     </div>
 
     <div class="row submit-button">
-      <div class="col-12">
-        <button type="click" name="sumbit" id="submitBtn">Submit Order</button>
+      <div class="col-6">
+        <button type="click" class="btn-lg btn-info" name="submit" id="submitBtn">Submit Order</button>
+        <div class="hidden" id="resetBtn">
+        <button type="click" class="btn-lg btn-warning" name="resetBtn" id="resetBtn">New Order</button>
+        </div>
+      </div>
+      <div class="col-6">
+        <h3 id="showPizzaPriceTitle">Total Price (after submit):</h3>
+        <h2 id="showPizzaPrice">$0.00</h2>
     </div>
-    <div class="row total-price">
-      <div class="col-12">
-    <h3>Total Price</h3>
-    <h2 id="showPizzaPrice" class="hidden"></h2>
     </div>
-  
-
-
-
-
-
-
-
   </div>
 
-  <script src="js/scripts.js"></script>
-</body>
-
-</html>
+  <script src=" js/scripts.js"> </script> </body> </html>

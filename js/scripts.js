@@ -68,11 +68,23 @@ function showTotalPrice(event) {
   const currentPizzaPrice = pizza.totalPizzaPrice(newPizza.toppings, newPizza.size);
 
   let showPizzaPrice = document.getElementById("showPizzaPrice");
+  let submitBtn = document.getElementById("submitBtn");
+  let resetButton = document.getElementById("resetBtn");
+
+  submitBtn.setAttribute("class", "hidden");
+  resetButton.removeAttribute("class", "hidden");
   showPizzaPrice.removeAttribute("class", "hidden");
-  showPizzaPrice.innerHTML = currentPizzaPrice;
+  showPizzaPrice.innerHTML = "$" + currentPizzaPrice;
+}
+
+function restartPage(event){
+  event.preventDefault();
+  location.reload();
 }
 
 window.addEventListener("load", function () {
   const submitButton = document.getElementById("submitBtn");
   submitButton.addEventListener("click", showTotalPrice);
+  const resetBtn = document.getElementById("resetBtn");
+  resetBtn.addEventListener("click", restartPage);
 });
