@@ -22,11 +22,16 @@ Pizza.prototype.sizePrices = function(size) {
     default:
       console.log("invalid size");
   }
+};
 
+Pizza.prototype.addAdditionalToppings = function(toppings) {
+  this.toppings = toppings;
+  console.log(toppings);
 };
 
 
 let pizza = new Pizza();
-const newPizza = new Pizza(["pineapple", "ham"], "large");
+const newPizza = new Pizza(["pineapple", "ham", "onions"], "large");
 
 pizza.sizePrices(newPizza.size);
+pizza.addAdditionalToppings(newPizza.toppings);
