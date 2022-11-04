@@ -38,5 +38,9 @@ Expected Output: 1;
 Test: "It should add .25 for each additional topping past two toppings. Two toppings are free, then each additional is .25"
 Code: const newPizza = new Pizza(["pineapple", "ham", "onions"], "small");
 pizza.sizePrices(newPizza.addAdditionalToppings);
-Expected Output: 5.25;
+Expected Output: 0.25;
 
+Test: "It should add 0.25 to the pizza size price"
+Code: const newPizza = new Pizza(["pineapple", "ham", "onions"], "small");
+pizza.addAdditionalTop(newPizza.size, newPizza.toppings);
+Expected Output: 5.25

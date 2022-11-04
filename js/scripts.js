@@ -11,15 +11,15 @@ Pizza.prototype.sizePrices = function(size) {
   switch(this.size){
     case "small":
       price = 5;
-      console.log(price);
+      return price;
       break;
     case "medium":
       price = 6;
-      console.log(price);
+      return price;
       break;
     case "large":
       price = 7;
-      console.log(price);
+      return price;
       break;
     default:
       console.log("invalid size");
@@ -35,14 +35,22 @@ Pizza.prototype.addAdditionalToppings = function(toppings) {
     return extraToppings;
   }else{
     let noExtraCharge = 0;
-    console.log(noExtraCharge);
+    //console.log(noExtraCharge);
     return noExtraCharge;
   }
 };
 
+Pizza.prototype.totalPizzaPrice = function(toppings, size){
+  this.toppings = toppings;
+  this.size = size;
+  let pizzaSize = pizza.sizePrices(newPizza.size);
+  let additionalToppings = pizza.addAdditionalToppings(newPizza.toppings);
+  return pizzaSize + additionalToppings;
+};
 
 let pizza = new Pizza();
-const newPizza = new Pizza(["pineapple", "ham"], "large");
-
+const newPizza = new Pizza(["pineapple", "ham", "peppers", "onions"], "large");
 pizza.sizePrices(newPizza.size);
 pizza.addAdditionalToppings(newPizza.toppings);
+let totalPrice = pizza.totalPizzaPrice(newPizza.size, newPizza.toppings);
+console.log(totalPrice);
