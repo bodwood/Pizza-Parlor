@@ -5,9 +5,15 @@ function Pizza(toppings = [], size){
 
 Pizza.prototype.sizePrices = function(size) {
   this.size = size;
+  let price = 0;
   switch(this.size){
     case "small":
-      console.log("small pizza is $5");
+      price = 5;
+      console.log(price);
+      break;
+    case "medium":
+      price = 6;
+      console.log(price);
       break;
     default:
       console.log("invalid size");
@@ -17,6 +23,6 @@ Pizza.prototype.sizePrices = function(size) {
 
 
 let pizza = new Pizza();
-const newPizza = new Pizza(["pineapple", "ham"], "small");
+const newPizza = new Pizza(["pineapple", "ham"], "medium");
 
 pizza.sizePrices(newPizza.size);

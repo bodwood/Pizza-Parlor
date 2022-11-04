@@ -5,10 +5,12 @@ Code: const newPizza = new Pizza(["pineapple", "ham"], "large");
 console.log(newPizza);
 Expected Output: Pizza { toppings: ["pineapple", "ham"], size: "large"};
 
-Test: "It should log the price of pizza depending on it's size".
+Test: "It should log the price of a small pizza".
 Code: const newPizza = new Pizza(["pineapple", "ham"], "small");
 pizza.sizePrices(newPizza.size);
-Expected Output: Pizza { toppings: ["pineapple", "ham"], size: "small"} small pizza costs $5";
+Expected Output: 5;
 
-
+Test: "It should log the price of a medium pizza"
+Code: const newPizza = new Pizza(["pineapple", "ham"], "medium");
+Expected Output: 6;
 
