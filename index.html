@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
-  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Pizza Parlor</title>
 </head>
+
 <body>
+  <div class="container">
+    <label for="sizeSmall">Small
+      <input type="radio" name="size" id="size" value="small">
+    </label>
+    <label for="sizeMedium">Medium
+      <input type="radio" name="size" id="size" value="medium">
+    </label>
+    <label for="sizeSmall">Large
+      <input type="radio" name="size" id="size" value="large">
+    </label>
+    <br><br>
+    <h2>Select your toppings</h2>
+    <label for="pepperoni">Pepperoni
+    <input type="checkbox" name="pepperoni" id="pepperoni" value="pepperoni">
+  </label>
+  <label for="sausage">Sausage
+    <input type="checkbox" name="sausage" id="sausage" value="sausage">
+  </label>
+  <label for="ham">Ham
+    <input type="checkbox" name="ham" id="ham" value="ham">
+  </label>
+    <br>
+    <label for="onions">Onions
+    <input type="checkbox" name="onions" id="onions" value="onions">
+  </label>
+  <label for="peppers">Peppers
+    <input type="checkbox" name="peppers" id="peppers" value="peppers">
+  </label>
+  <label for="olives">Olives
+    <input type="checkbox" name="olives" id="olives" value="olives">
+  </label>
+    <br>
+    <h3>Total Price</h3>
+    <h2 id="pizzaPrice" class="hidden"></h2>
+
+
+
+
+
+
+
+  </div>
 
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

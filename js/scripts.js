@@ -1,3 +1,5 @@
+//Business Logic ------------------------------------
+
 //Pizza constructor
 function Pizza(toppings = [], size){
   this.toppings = toppings;
@@ -54,3 +56,7 @@ pizza.sizePrices(newPizza.size);
 pizza.addAdditionalToppings(newPizza.toppings);
 let totalPrice = pizza.totalPizzaPrice(newPizza.size, newPizza.toppings);
 console.log(totalPrice);
+
+
+//UI Logic --------------------------------------
+
