@@ -10,7 +10,7 @@
 
 ## Link
 
-_https://github.com/bodwood/portfolio_
+_https://github.com/bodwood/Pizza-Parlor_
 
 ## Github Site
 
@@ -27,9 +27,11 @@ _https://bodwood.github.io/Pizza-Parlor/_
 
 ## Description
 
-_This web application allows users to input a number and return a result of Beeps!, Boops!, and Won't you be my neighbor?._
+_This web application allows users to build a pizza with their choice of toppings._
 
-_Users can enter a number and view the resulting string of Beeps!, Boops!, Won't you be my neighbor?_
+_Users can select the size of pizza and up to 9 different toppings_
+
+_The total price of their pizza will be displayed after clicking the submit order button_
 
 ## Setup/Installation Requirements
 
@@ -89,7 +91,7 @@ Expected Output: 5.25
 
 ## Known Bugs
 
-* _body background image doesn't go to bottom of screen_
+* _None_
 
 ---
 
