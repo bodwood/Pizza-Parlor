@@ -41,6 +41,7 @@ Pizza.prototype.addAdditionalToppings = function (toppings) {
   }
 };
 
+//Combines price of pizza size with price of additional toppings
 Pizza.prototype.totalPizzaPrice = function (toppings, size) {
   this.toppings = toppings;
   this.size = size;
@@ -53,6 +54,8 @@ let pizza = new Pizza();
 
 
 //UI Logic --------------------------------------
+
+//Displays the total price of the pizza to the customer
 function showTotalPrice(event) {
   event.preventDefault();
   const pizzaSize = document.querySelector('input[name="size"]:checked').value;
@@ -62,8 +65,11 @@ function showTotalPrice(event) {
     checkboxValues.push(checkbox.value);
   });
   const newPizza = new Pizza(checkboxValues, pizzaSize);
-  console.log(pizza.totalPizzaPrice(newPizza.toppings, newPizza.size));
+  const currentPizzaPrice = pizza.totalPizzaPrice(newPizza.toppings, newPizza.size);
 
+  let showPizzaPrice = document.getElementById("pizzaPrice");
+  showPizzaPrice.removeAttribute("class", "hidden");
+  showPizzaPrice.innerHTML = currentPizzaPrice;
 }
 
 window.addEventListener("load", function () {
