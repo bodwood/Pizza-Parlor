@@ -1,0 +1,10 @@
+.hidden{
+  display: none;
+}
+
+body{
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5864fcb8197aea2b44ef8a3b/1483575742947-49M03GGBO6S9V5HE48VZ/blurred-background-vintage-filter-coffee-shop-blur-background-with-bokeh_HwSnElOhMe.jpg?format=2500w");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
