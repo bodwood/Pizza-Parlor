@@ -67,7 +67,7 @@ function showTotalPrice(event) {
   const newPizza = new Pizza(checkboxValues, pizzaSize);
   const currentPizzaPrice = pizza.totalPizzaPrice(newPizza.toppings, newPizza.size);
 
-  let showPizzaPrice = document.getElementById("pizzaPrice");
+  let showPizzaPrice = document.getElementById("showPizzaPrice");
   showPizzaPrice.removeAttribute("class", "hidden");
   showPizzaPrice.innerHTML = currentPizzaPrice;
 }
