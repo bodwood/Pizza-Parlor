@@ -25,3 +25,18 @@ Code: const newPizza = new Pizza(["pineapple", "ham", "onions"], "large");
 pizza.sizePrices(newPizza.toppings);
 Expected Output: ["pineapple", "ham", "onions"];
 
+Test: "It should return the amount of toppings for the pizza"
+Code: const newPizza = new Pizza(["pineapple", "ham", "onions"], "small");
+pizza.sizePrices(newPizza.addAdditionalToppings);
+Expected Output: 3;
+
+Test: "It should return the amount of toppings for the pizza minus 2"
+Code: const newPizza = new Pizza(["pineapple", "ham", "onions"], "small");
+pizza.sizePrices(newPizza.addAdditionalToppings);
+Expected Output: 1;
+
+Test: "It should add .25 for each additional topping past two toppings. Two toppings are free, then each additional is .25"
+Code: const newPizza = new Pizza(["pineapple", "ham", "onions"], "small");
+pizza.sizePrices(newPizza.addAdditionalToppings);
+Expected Output: 5.25;
+

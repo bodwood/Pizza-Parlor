@@ -1,8 +1,10 @@
+//Pizza constructor
 function Pizza(toppings = [], size){
   this.toppings = toppings;
   this.size = size;
 }
 
+//Places a price on each pizza size
 Pizza.prototype.sizePrices = function(size) {
   this.size = size;
   let price = 0;
@@ -24,14 +26,23 @@ Pizza.prototype.sizePrices = function(size) {
   }
 };
 
+//Adds .25 for each additional toppings, past two toppings
 Pizza.prototype.addAdditionalToppings = function(toppings) {
   this.toppings = toppings;
-  console.log(toppings);
+  if(toppings.length > 2){
+    let extraToppings = toppings.length - 2;
+    extraToppings *= .25;
+    return extraToppings;
+  }else{
+    let noExtraCharge = 0;
+    console.log(noExtraCharge);
+    return noExtraCharge;
+  }
 };
 
 
 let pizza = new Pizza();
-const newPizza = new Pizza(["pineapple", "ham", "onions"], "large");
+const newPizza = new Pizza(["pineapple", "ham"], "large");
 
 pizza.sizePrices(newPizza.size);
 pizza.addAdditionalToppings(newPizza.toppings);
