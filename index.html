@@ -10,6 +10,7 @@
 <body>
   <div class="container ">
     <h1>Pizza Builder</h1>
+    <h2>Select Size</h2>
     <div class="row columns center-block">
       <div class="col-4 columns">
         <img src="img/pizza.png" class="smallPizza" alt="picture of small pizza" for="sizeSmall">
@@ -33,42 +34,86 @@
         </label>
       </div>
       <div class="col-4">
-        <label for="sizeSmall">Large
+        <label for="sizeLarge">Large
           <input type="radio" name="size" id="sizeLarge" value="large">
         </label>
       </div>
     </div>
     <br><br>
-    <h2>Select your toppings</h2>
-    <img src="img/pepperoni.png" alt="picture of pepperoni slices">
-    <label for="pepperoni">Pepperoni
-      <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
-    </label>
-    <img src="img/sausage.png" alt="picture of sausage">
-    <label for="sausage">Sausage
-      <input type="checkbox" name="toppings" id="sausage" value="sausage">
-    </label>
-    <label for="ham">Ham
-      <img src="img/ham.png" alt="picture of ham">
-      <input type="checkbox" name="toppings" id="ham" value="ham">
-    </label>
-    <br>
-    <img src="img/onions.png" alt="picture of onion">
-    <label for="onions">Onions
-      <input type="checkbox" name="toppings" id="onions" value="onions">
-    </label>
-    <img src="img/peppers.png" alt="picture of peppers">
-    <label for="peppers">Peppers
-      <input type="checkbox" name="toppings" id="peppers" value="peppers">
-    </label>
-    <img src="img/olives.png" alt="picture of olives">
-    <label for="olives">Olives
-      <input type="checkbox" name="toppings" id="olives" value="olives">
-    </label>
-    <br>
+    <h2 class="toppingsTitle">Select your toppings</h2>
+    <div class="row columns2 center-block">
+      <div class="col-4">
+        <img src="img/pepperoni.png" alt="picture of pepperoni slices">
+        <label for="pepperoni">Pepperoni
+          <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
+        </label>
+      </div>
+      <div class="col-4">
+        <img src="img/sausage.png" alt="picture of sausage">
+        <label for="sausage">Sausage
+          <input type="checkbox" name="toppings" id="sausage" value="sausage">
+        </label>
+      </div>
+      <div class="col-4">
+        <img src="img/ham.png" alt="picture of ham">
+        <label for="ham">Ham
+          <input type="checkbox" name="toppings" id="ham" value="ham">
+        </label>
+      </div>
+    </div>
+    <div class="row columns2 center-block">
+      <div class="col-4">
+        <img src="img/onions.png" alt="picture of onion">
+        <label for="onions">Onions
+          <input type="checkbox" name="toppings" id="onions" value="onions">
+        </label>
+      </div>
+      <div class="col-4">
+        <img src="img/peppers.png" alt="picture of peppers">
+        <label for="peppers">Peppers
+          <input type="checkbox" name="toppings" id="peppers" value="peppers">
+        </label>
+      </div>
+      <div class="col-4">
+        <img src="img/olives.png" alt="picture of olives">
+        <label for="olives">Olives
+          <input type="checkbox" name="toppings" id="olives" value="olives">
+        </label>
+      </div>
+    </div>
+  
+
+    <div class="row columns2 center-block">
+      <div class="col-4">
+        <img src="img/oliveoil.png" alt="picture of olive oil">
+        <label for="oliveOil">Olive Oil
+          <input type="checkbox" name="toppings" id="oliveOil" value="oliveOil">
+        </label>
+      </div>
+      <div class="col-4">
+        <img src="img/balsamicvinegar.png" alt="picture of balsamic vinegar">
+        <label for="balsamicVinegar">Balsamic Vinegar
+          <input type="checkbox" name="toppings" id="balsamicVinegar" value="balsamicVinegar">
+        </label>
+      </div>
+      <div class="col-4">
+        <img src="img/chilioil.png" alt="picture of chili oil">
+        <label for="chiliOil">Chili Oil
+          <input type="checkbox" name="toppings" id="chiliOil" value="chiliOil">
+        </label>
+      </div>
+    </div>
+
+    <div class="row submit-button">
+      <div class="col-12">
+        <button type="click" name="sumbit" id="submitBtn">Submit Order</button>
+    </div>
+    <div class="row total-price">
+      <div class="col-12">
     <h3>Total Price</h3>
     <h2 id="showPizzaPrice" class="hidden"></h2>
-    <button type="click" name="sumbit" id="submitBtn">Submit Order</button>
+    </div>
+  
 
 
 
