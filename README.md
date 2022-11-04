@@ -1,3 +1,44 @@
+# Pizza Parlor
+
+#### By _**Bodie Wood**_
+
+#### _A simple web application that allows users to build a pizza and submit the pizza to receive the orders price._
+#### _There are 3 different sizes of pizza_
+#### _There are 9 different toppings to choose from_
+
+---
+
+## Link
+
+_https://github.com/bodwood/portfolio_
+
+## Github Site
+
+_https://bodwood.github.io/porfolio_
+
+---
+
+## Technologies Used
+
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+
+## Description
+
+_This web application allows users to input a number and return a result of Beeps!, Boops!, and Won't you be my neighbor?._
+
+_Users can enter a number and view the resulting string of Beeps!, Boops!, Won't you be my neighbor?_
+
+## Setup/Installation Requirements
+
+* _Clone this repository to your desktop._
+* _Navigate to the most top directory._
+* _Open index.html_
+
+
+```
 Describe: Pizza()
 
 Test: "It should log a Pizza object with two properties of toppings and size".
@@ -44,3 +85,17 @@ Test: "It should add 0.25 to the pizza size price"
 Code: const newPizza = new Pizza(["pineapple", "ham", "onions"], "small");
 pizza.addAdditionalTop(newPizza.size, newPizza.toppings);
 Expected Output: 5.25
+```
+
+## Known Bugs
+
+* _body background image doesn't go to bottom of screen_
+
+---
+
+## License
+
+_MIT_
+https://choosealicense.com/licenses/mit/
+
+Copyright (c) 2022 _Bodie Wood_
